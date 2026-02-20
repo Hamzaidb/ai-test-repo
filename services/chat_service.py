@@ -53,7 +53,7 @@ class ChatService:
         ]
 
         response = self.client.chat.completions.create(
-            model="gpt-4o",
+            model="gpt-5",
             messages=messages,
             temperature=temperature or self.temperature,
             max_tokens=max_tokens or self.max_tokens,

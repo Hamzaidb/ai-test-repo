@@ -58,7 +58,7 @@ def process_row(client: OpenAI, row: dict, row_index: int) -> str:
     for attempt in range(1, MAX_RETRIES + 1):
         try:
             response = client.chat.completions.create(
-                model="gpt-4o",
+                model="gpt-5",
                 messages=[
                     {"role": "system", "content": SYSTEM_PROMPT},
                     {"role": "user", "content": user_message},
